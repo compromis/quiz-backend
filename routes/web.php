@@ -11,6 +11,5 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
+$router->post('{quiz}/score', 'QuizController@post_score');
+$router->post('{quiz}/stat', 'QuizController@post_stat');
