@@ -11,5 +11,6 @@
 |
 */
 
+$router->get('{quiz}/scores', 'QuizController@get_scores');
 $router->post('{quiz}/score', 'QuizController@post_score');
 $router->post('{quiz}/stat', 'QuizController@post_stat');
