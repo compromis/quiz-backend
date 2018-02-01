@@ -11,6 +11,9 @@
 |
 */
 
-$router->get('{quiz}/scores', 'QuizController@get_scores');
-$router->post('{quiz}/score', 'QuizController@post_score');
-$router->post('{quiz}/stat', 'QuizController@post_stat');
+$router->get('/', function() {
+    return 'Quiz Api 1.0';
+});
+$router->get('api/quiz/{quiz}/scores', 'QuizController@get_scores');
+$router->post('api/quiz/{quiz}/score', 'QuizController@post_score');
+$router->post('api/quiz/{quiz}/stat', 'QuizController@post_stat');
