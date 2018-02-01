@@ -69,7 +69,8 @@ class QuizController extends Controller
             'fb_id' => $request->input('fb_id'),
             'name' => $request->input('name'),
             'question_id' => $request->input('question_id'),
-            'answer_id' => $request->input('answer_id'),
+            'answer' => $request->input('answer'),
+            'points' => $request->input('points'),
             'ip_address' => $request->ip(),
             'user_agent' => $request->header('User-Agent')
         ];

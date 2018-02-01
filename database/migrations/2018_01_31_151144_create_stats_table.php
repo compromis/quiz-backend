@@ -19,7 +19,8 @@ class CreateStatsTable extends Migration
             $table->integer('fb_id');
             $table->string('name');
             $table->integer('question_id');
-            $table->integer('answer_id');
+            $table->string('answer');
+            $table->integer('points');
             $table->ipAddress('ip_address');
             $table->text('user_agent');
             $table->timestamps();
