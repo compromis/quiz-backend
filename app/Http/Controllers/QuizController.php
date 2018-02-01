@@ -13,7 +13,8 @@ class QuizController extends Controller
      */
     public function __construct()
     {
-        //
+        $origin = ($_SERVER['HTTP_ORIGIN'] == env('APP_TESTING_ORIGIN')) ? env('APP_TESTING_ORIGIN') : env('APP_ORIGIN');
+        header("Access-Control-Allow-Origin: $origin");
     }
 
     /**
